@@ -1,3 +1,5 @@
 results/
+results-hidden/
 __pycache__/
 corpus-hidden/
+blend-stage/
