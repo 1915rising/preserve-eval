@@ -1,0 +1,326 @@
+{
+ "eval": "preserve-eval",
+ "corpus_cases": 4,
+ "weights": {
+  "preservation": 0.6,
+  "shape": 0.25,
+  "intrinsic": 0.15
+ },
+ "entries": [
+  {
+   "candidate": "baseline",
+   "kind": "control",
+   "solver_sha256": "f6d57da28611d1885a6e629ebe7b209472a86ea558cd01ec9a5eeeb944243a84",
+   "overall": 0.9875,
+   "verdict": "pass",
+   "sections": {
+    "preservation": 1.0,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.46,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 1.0
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 1.0
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.9833
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.9875
+    }
+   ]
+  },
+  {
+   "candidate": "lane-a",
+   "kind": "lane",
+   "solver_sha256": "958d12e837ce7430041e453d4ff5864d48a20093d2edc947f971a033f8266255",
+   "overall": 0.9125,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.875,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.41,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 1.0
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.85
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.8833
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.9125
+    }
+   ]
+  },
+  {
+   "candidate": "lane-b",
+   "kind": "lane",
+   "solver_sha256": "c73906bded50be7337b7aabd6736e9d94c6a22acfd3ebf16b92004d6e9379a0a",
+   "overall": 0.9125,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.875,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.32,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 1.0
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.85
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.8833
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.9125
+    }
+   ]
+  },
+  {
+   "candidate": "traps/uv-swap",
+   "kind": "trap",
+   "solver_sha256": "bb40eab97e4f417f199c7adb77731bd523f3ad8541d05019f69b1923701fea0d",
+   "overall": 0.7125,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.5417,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.36,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.8
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.75
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.7167
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.7125
+    }
+   ]
+  },
+  {
+   "candidate": "traps/component-swap",
+   "kind": "trap",
+   "solver_sha256": "c973d8d8fd8c26f5ead4e5c16b9940bc259206abb3ff11db032c25f1a864ab80",
+   "overall": 0.6625,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.4583,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.38,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.7
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.7
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.6833
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.6625
+    }
+   ]
+  },
+  {
+   "candidate": "traps/vertex-reorder",
+   "kind": "trap",
+   "solver_sha256": "0d61a16d3321c3f6137b659c1025ef3cd3b2fb0ceb40af55347c8397546a8f0c",
+   "overall": 0.5625,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.2916,
+    "shape": 1.0,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.4,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.6
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.55
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.55
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.5625
+    }
+   ]
+  },
+  {
+   "candidate": "traps/axis-swap",
+   "kind": "trap",
+   "solver_sha256": "d57de05036b907ea14aaf061d76c47ac212f86a49d8b774d53ffd419d94272b9",
+   "overall": 0.503,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.3333,
+    "shape": 0.662,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.37,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.4895
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.5398
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.497
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.503
+    }
+   ]
+  },
+  {
+   "candidate": "sloppy",
+   "kind": "control",
+   "solver_sha256": "5f1ce01da23334e23516aa565ea48f00b4d29a3c9b40ad7cb44b908fa2873593",
+   "overall": 0.4819,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.3333,
+    "shape": 0.5778,
+    "intrinsic": 0.9167
+   },
+   "wall_clock_seconds": 0.37,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.4774
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.5104
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.4862
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.4819
+    }
+   ]
+  },
+  {
+   "candidate": "traps/liar",
+   "kind": "trap",
+   "solver_sha256": "6b5d8c123ede4edd460772356e95a746c3f895609766fe9eb599a852095e274a",
+   "overall": 0.0,
+   "verdict": "fail",
+   "sections": {
+    "preservation": 0.0,
+    "shape": 0.0,
+    "intrinsic": 0.0
+   },
+   "wall_clock_seconds": 0.37,
+   "trajectory": [
+    {
+     "checkpoint": 1,
+     "case": "cube-uv",
+     "cumulative_overall": 0.0
+    },
+    {
+     "checkpoint": 2,
+     "case": "icosphere",
+     "cumulative_overall": 0.0
+    },
+    {
+     "checkpoint": 3,
+     "case": "open-box",
+     "cumulative_overall": 0.0
+    },
+    {
+     "checkpoint": 4,
+     "case": "two-components",
+     "cumulative_overall": 0.0
+    }
+   ]
+  }
+ ]
+}

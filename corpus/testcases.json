@@ -1,0 +1,29 @@
+{
+ "_comment": "preserve-eval corpus manifest; bases are hash-pinned, filenames do not matter",
+ "testcases": [
+  {
+   "id": "cube-uv",
+   "base": "../reference/cube.obj",
+   "base_sha256": "d98a2e2176d45acbe1c25ac0c466b3adf7ddf3a17238647a5fa659b39633425e",
+   "description": "UV-mapped cube, watertight, quad faces"
+  },
+  {
+   "id": "icosphere",
+   "base": "../reference/icosphere.obj",
+   "base_sha256": "98a48afb8b2072719f0f7eecbb27adc31171df88d505ad7c9e44556dd1f52e12",
+   "description": "Subdivided icosphere, watertight, no UVs"
+  },
+  {
+   "id": "open-box",
+   "base": "../reference/open-box.obj",
+   "base_sha256": "d0b86f996a9f88460a831fb11d56880facf75bcf7c683682e9a6ff236beefc7f",
+   "description": "Cube missing its top face \u2014 not watertight by design"
+  },
+  {
+   "id": "two-components",
+   "base": "../reference/two-components.obj",
+   "base_sha256": "b75c7780ae8018101d11bbff4666c9009aaa76d1d9b121a1232b2f113440380c",
+   "description": "Two separate cubes \u2014 the crossed-components fixture"
+  }
+ ]
+}
